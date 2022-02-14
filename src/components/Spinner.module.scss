@@ -1,0 +1,49 @@
+@import '../styles/variables.scss';
+
+.spinnerWrapper {
+  position: relative;
+
+}
+.spinner {
+  margin: 0 auto;
+  display: block;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-bottom-style: solid;
+  border-radius: 50px;
+  animation: rotate .7s infinite ;
+  transform: rotateX(0deg);
+}
+.large {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  border-width: 6px;
+}
+.light {
+  border-color: $mid-color;
+  border-bottom-color: $primary-blue;
+}
+.dark {
+  border-color: $primary-blue;
+  border-bottom-color: $mid-color;
+}
+.small {
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  border-width: 4px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+ 
+  100% {
+    transform: rotate(360deg);
+  }
+}

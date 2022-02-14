@@ -1,0 +1,63 @@
+@mixin fadeUp {
+  transform: translateY(0px);
+  opacity: 1;
+  animation: fadeUpAnimation 1s forwards ease-in;
+}
+@mixin fadeDown {
+  transform: translateY(0px);
+  opacity: 1;
+  animation: fadeDownAnimation 1s forwards ease-in;
+}
+@mixin fadeLeft {
+  transform: translateY(0px);
+  opacity: 1;
+  animation: fadeLeftAnimation 1s forwards ease-in;
+}
+@mixin fadeRight {
+  transform: translateY(0px);
+  opacity: 1;
+  animation: fadeRightAnimation 1s forwards ease-in;
+}
+
+
+
+@keyframes fadeUpAnimation {
+  0% {
+    transform: translateY(0px);
+    opacity: 1
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+@keyframes fadeDownAnimation {
+  0% {
+    transform: translateY(0px);
+    opacity: 1
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+@keyframes fadeLeftAnimation {
+  0% {
+    transform: translateX(0px);
+    opacity: 1
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+@keyframes fadeRightAnimation {
+  0% {
+    transform: translateX(0px);
+    opacity: 1
+  }
+  100% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}

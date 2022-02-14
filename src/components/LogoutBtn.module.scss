@@ -1,0 +1,36 @@
+.logout {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  &:hover > p {
+    opacity: 1;
+    transition: 0.3s;
+    transform: translateX(0px);
+
+  }
+  &:hover > span {
+    filter: brightness(1.5 );
+    transition: 0.3s;    
+    transform: translateX(0px);
+
+  }
+  span {
+    font-size: 40px;
+    transition: 0.3s;
+    transform: translateX(10px);
+  }
+  p {
+    opacity: 0;
+    transition:  0.3s;
+    font-size: 12px;
+    transform: translateX(-15px);
+  }
+}

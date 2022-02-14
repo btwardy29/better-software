@@ -1,0 +1,51 @@
+@import '../styles/variables.scss';
+
+.fullScreen {
+  background-color: rgba(0, 0, 0, 0.719);
+  width:100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn .3s forwards;
+}
+
+.movieContainer {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: $primary-color;
+  position: relative;
+  p {
+    text-align: center;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut forwards 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

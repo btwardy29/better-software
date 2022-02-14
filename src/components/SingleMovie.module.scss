@@ -1,0 +1,59 @@
+@import '../styles/variables.scss';
+
+.wrapper {
+  max-width: 1000px;
+  height: 200px;
+  background-color: $mid-color;
+  margin: 15px;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  animation: fadeInMovie 0.5s forwards;
+  opacity: 0; 
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 0.37);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 0.37);
+  box-shadow: 0px 0px 25px 0px rgba(36, 36, 48, 0.315);
+  filter: brightness(1);
+  transition:  0.5s;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(1.1);
+    margin-left:10px;
+  }
+}
+
+.imgContainer {
+  min-width: 25%;
+  max-width: 25%;
+  aspect-ratio: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.description {
+  padding: 15px;
+  h2 {
+    padding: 10px;
+    color: $primary-blue;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 200;
+    padding: 10px;
+  }
+}
+
+
+@keyframes fadeInMovie {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

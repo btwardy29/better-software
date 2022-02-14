@@ -1,0 +1,32 @@
+@import '../styles/variables.scss';
+
+.wrapper {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: none
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $mid-color;
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color;
+  }
+}
+
+.spinnerWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

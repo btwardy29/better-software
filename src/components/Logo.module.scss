@@ -1,0 +1,25 @@
+@import '../styles/variables.scss';
+
+.logoWrapper {
+  padding-top: 20px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0px 3px 25px rgba(66, 115, 194, 0.925);
+
+
+  .logo1, .logo2 {
+    font-size: 40px;
+
+  }
+  .icon {
+    font-size: 50px;
+    margin-bottom: -5px;
+
+  }
+  .letter {
+    color: $primary-blue;
+    font-weight: 300;
+  }
+}
