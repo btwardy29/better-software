@@ -7,7 +7,7 @@ import styles from './LogoutBtn.module.scss'
 const LogoutBtn = () => {
 
   const { dispatch } = useAuthContext()
-  const [setAuthStorage] = useSessionStorage("auth");
+  const [authStorage, setAuthStorage] = useSessionStorage("auth");
   let navigate = useNavigate();
 
 
