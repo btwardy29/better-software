@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 20;
   cursor: pointer;
   &:hover > p {
     opacity: 1;
